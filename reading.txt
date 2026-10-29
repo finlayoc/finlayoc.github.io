@@ -1,6 +1,5 @@
-# Articles to show in the Clippings section, newest first, one per line:
-#   URL | why it caught your eye | optional headline
-# The script pulls the headline and publication from the page. Paywalled sites
-# (WSJ, The Information, etc.) often hide it, so add the headline yourself for those.
-# Example:
-#   https://www.example.com/startup-story | Great look at how they priced their first product | Headline Here
+# Articles for the Reading section, newest first, one per line:
+#   URL | why it caught your eye | headline
+# Paywalled sites (WSJ, NYT) block the auto-lookup, so write the headline yourself.
+https://www.wsj.com/business/autos/trump-administration-promised-tariff-relief-in-talks-to-secure-u-s-audi-factory-da037c3f |  | Trump Administration Promised Tariff Relief in Talks to Secure U.S. Audi Factory
+https://www.wsj.com/business/autos/geely-profit-climbs-as-overseas-sales-offset-slowing-china-demand-6fe04706 |  | Geely Profit Climbs as Overseas Sales Offset Slowing China Demand
