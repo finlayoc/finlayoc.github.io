@@ -1,8 +1,7 @@
 # Bring a Trailer auctions to show on the site, one listing URL per line.
-# Lines starting with # are ignored. Ended auctions stay up (marked Sold / Bid to)
+# Lines starting with # are ignored. Ended auctions stay up (marked Sold / Not sold)
 # until you delete the line.
-# These four are examples pulled from BaT's live feed. Replace them with yours.
-https://bringatrailer.com/listing/1977-toyota-land-cruiser-fj40-198/
-https://bringatrailer.com/listing/2006-porsche-cayman-s-300/
-https://bringatrailer.com/listing/2004-mercedes-benz-sl55-amg-121/
-https://bringatrailer.com/listing/2006-subaru-impreza-wrx-tr-4/
+https://bringatrailer.com/listing/1990-toyota-land-cruiser-fj62-111/
+https://bringatrailer.com/listing/2006-lotus-elise-102/
+https://bringatrailer.com/listing/1998-mitsubishi-pajero-evolution-23/
+https://bringatrailer.com/listing/1973-porsche-911t-coupe-63/
