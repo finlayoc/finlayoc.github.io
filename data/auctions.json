@@ -1,0 +1,41 @@
+{
+   "auctions" : [
+      {
+         "amount" : null,
+         "ends" : 1793906040,
+         "image" : "https://bringatrailer.com/wp-content/uploads/2026/09/A7308860-scaled-copy-2026-10-20-s3h-copy-2026-10-26-6t1-349f9613b7129291be685588763af438.jpg",
+         "noReserve" : false,
+         "status" : "live",
+         "title" : "30k-Mile 2004 Mercedes-Benz SL55 AMG",
+         "url" : "https://bringatrailer.com/listing/2004-mercedes-benz-sl55-amg-121/"
+      },
+      {
+         "amount" : "$9,871",
+         "ends" : 1793906100,
+         "image" : "https://bringatrailer.com/wp-content/uploads/2026/09/IMG_0862-scaled-copy-2026-10-25-p3s-c489d1d184f408c7b87875dbfad02be7.jpg",
+         "noReserve" : false,
+         "status" : "live",
+         "title" : "2006 Porsche Cayman S 6-Speed",
+         "url" : "https://bringatrailer.com/listing/2006-porsche-cayman-s-300/"
+      },
+      {
+         "amount" : null,
+         "ends" : 1793908740,
+         "image" : "https://bringatrailer.com/wp-content/uploads/2026/07/IMG_0389-scaled-copy-2026-10-26-93m-0225d80e16ad17793c62cd13936d9e31.jpg",
+         "noReserve" : false,
+         "status" : "live",
+         "title" : "2006 Subaru Impreza WRX TR 5-Speed",
+         "url" : "https://bringatrailer.com/listing/2006-subaru-impreza-wrx-tr-4/"
+      },
+      {
+         "amount" : null,
+         "ends" : 1793914860,
+         "image" : "https://bringatrailer.com/wp-content/uploads/2026/10/IMG_5774-scaled-copy-2026-10-27-oe1-a829b9f55e5662be61e35cab80cb61f4.jpg",
+         "noReserve" : true,
+         "status" : "live",
+         "title" : "1977 Toyota Land Cruiser FJ40",
+         "url" : "https://bringatrailer.com/listing/1977-toyota-land-cruiser-fj40-198/"
+      }
+   ],
+   "updated" : "2026-10-29T21:40:36+00:00"
+}

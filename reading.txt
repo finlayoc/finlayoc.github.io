@@ -1,0 +1,6 @@
+# Articles to show in the Clippings section, newest first, one per line:
+#   URL | why it caught your eye | optional headline
+# The script pulls the headline and publication from the page. Paywalled sites
+# (WSJ, The Information, etc.) often hide it, so add the headline yourself for those.
+# Example:
+#   https://www.example.com/startup-story | Great look at how they priced their first product | Headline Here

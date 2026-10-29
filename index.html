@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Finlay O'Connor</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Finlay O'Connor: Finance & Entrepreneurial Startups, BSBA at Northeastern University. Building a career in the automotive industry.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow centred column on cream, hairline-ruled sections with small mono labels; a thin-line tachometer is the only flourish. Single deliberate light look. */
+:root {
+  --bg: #f7f3ea;
+  --ink: #1c211d;
+  --muted: #6f6c60;
+  --faint: #9a9686;
+  --line: #e2dbca;
+  --green: #0b4a2e;   /* British racing green */
+  --card: #fbf8f1;
+
+  --sans: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; border-radius: 2px; }
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+
+/* Placeholder marker: anything Finlay still needs to fill in */
+.fill { color: var(--muted); border-bottom: 1px dashed var(--green); }
+
+/* ---------- Nav ---------- */
+nav.wrap { display: flex; gap: 22px; flex-wrap: wrap; padding-block: 28px 0; font-size: 13px; }
+nav a { color: var(--faint); transition: color .15s ease; }
+nav a:hover, nav a[aria-current] { color: var(--ink); }
+
+/* ---------- Header ---------- */
+header.wrap { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 32px; align-items: center; padding-block: 64px 40px; }
+h1 { font-size: clamp(30px, 5vw, 40px); font-weight: 600; margin: 0; letter-spacing: -.02em; line-height: 1.1; }
+.tagline { margin: 10px 0 0; color: var(--ink); font-size: 16px; }
+.seeking { margin: 2px 0 0; color: var(--muted); }
+.ctas { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.btn { font-size: 13.5px; font-weight: 500; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--ink); transition: background .15s ease, color .15s ease, border-color .15s ease; }
+.btn.solid { background: var(--green); border-color: var(--green); color: var(--bg); }
+.btn.solid:hover { background: var(--ink); border-color: var(--ink); }
+.btn:not(.solid):hover { border-color: var(--green); color: var(--green); }
+
+.gauge { display: inline-flex; flex-direction: column; align-items: center; gap: 8px; background: none; border: 0; padding: 0; cursor: pointer; color: inherit; font: inherit; }
+.gauge svg { width: 168px; height: 168px; display: block; }
+
+/* Highlights strip */
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.stat { padding: 18px 16px 18px 0; min-width: 0; }
+.stat + .stat { padding-left: 16px; border-left: 1px solid var(--line); }
+.stat b { display: block; font-size: 22px; font-weight: 600; letter-spacing: -.01em; color: var(--green); font-variant-numeric: tabular-nums; }
+.stat span { font-size: 13px; color: var(--muted); }
+
+/* Green statement band */
+.band { background: var(--green); color: var(--bg); margin-top: 48px; }
+.band .wrap { padding-block: 44px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 32px; align-items: start; }
+.band h2 { font-size: 26px; font-weight: 600; letter-spacing: -.02em; line-height: 1.15; margin: 0; text-wrap: balance; }
+.band p { margin: 0; color: #d9e3d6; max-width: 52ch; }
+.band .label { font-size: 11px; font-weight: 500; letter-spacing: .14em; line-height: 1.6; color: #9fb8a6; border-color: rgba(247,243,234,.18); grid-column: 1 / -1; margin: 0; }
+.gauge .rim { fill: none; stroke: var(--ink); stroke-width: 2.5; }
+.gauge .tick { stroke: var(--ink); stroke-linecap: round; }
+.gauge .tick.red { stroke: var(--green); }
+.gauge .num { fill: var(--ink); font-family: var(--sans); font-size: 13px; font-weight: 500; }
+.gauge .num.red { fill: var(--green); }
+.gauge .needle { stroke: var(--green); stroke-width: 3.5; stroke-linecap: round; }
+.gauge .minute { stroke: var(--ink); stroke-width: 1.5; stroke-linecap: round; }
+.gauge .hub { fill: var(--ink); }
+.gauge:hover .rim { stroke: var(--green); }
+
+/* ---------- Sections ---------- */
+section.wrap { padding-block: 40px 0; }
+.label { font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--faint); margin: 0 0 4px; padding-bottom: 10px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 12px; }
+.label span { letter-spacing: .06em; text-transform: none; }
+.about p { margin: 14px 0 0; max-width: 62ch; }
+
+/* Rows: experience, education */
+.rows { list-style: none; margin: 0; padding: 0; }
+.rows > li { border-bottom: 1px solid var(--line); }
+details summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 16px; padding-block: 14px; }
+details summary::-webkit-details-marker { display: none; }
+.role { font-weight: 500; }
+.role .at { color: var(--faint); font-weight: 400; }
+.when { font-family: var(--mono); font-size: 12px; color: var(--faint); white-space: nowrap; padding-top: 2px; }
+.one { grid-column: 1 / -1; color: var(--muted); font-size: 14px; }
+.one::after { content: " +"; color: var(--green); }
+details[open] .one::after { content: " −"; }
+details summary:hover .role { color: var(--green); }
+details ul { margin: 0 0 16px; padding-left: 18px; color: var(--muted); font-size: 14px; display: grid; gap: 6px; max-width: 62ch; }
+details li::marker { color: var(--green); }
+
+/* Watchlist */
+.lots { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.lot a { display: flex; flex-direction: column; height: 100%; background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; transition: border-color .15s ease, transform .15s ease; }
+.lot a:hover { border-color: var(--green); transform: translateY(-2px); }
+.lot a:hover .t { color: var(--green); }
+.thumb { aspect-ratio: 16 / 10; max-width: 100%; background: var(--line); overflow: hidden; position: relative; }
+.thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.thumb .ph { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
+.lot .body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.lot .t { font-weight: 500; line-height: 1.35; }
+.lot .sub { font-size: 12.5px; color: var(--faint); }
+.lot .sub .live { color: var(--green); }
+.lot .sub .live::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--green); margin-right: 6px; vertical-align: 1px; }
+.lot .num { margin-top: auto; display: flex; justify-content: space-between; align-items: baseline; gap: 10px; border-top: 1px solid var(--line); padding-top: 10px; font-variant-numeric: tabular-nums; }
+.lot .num b { font-weight: 600; }
+.lot .num small { font-family: var(--mono); font-size: 11.5px; color: var(--faint); }
+.note-line { font-size: 12.5px; color: var(--faint); margin: 12px 0 0; }
+.empty { color: var(--faint); font-size: 14px; padding-block: 14px; border-bottom: 1px solid var(--line); margin: 0; }
+
+/* Reading */
+.clips { list-style: none; margin: 0; padding: 0; }
+.clip a { display: block; padding-block: 14px; border-bottom: 1px solid var(--line); }
+.clip .src { font-family: var(--mono); font-size: 11.5px; color: var(--faint); }
+.clip .t { font-weight: 500; margin-top: 2px; }
+.clip a:hover .t { color: var(--green); }
+.clip .why { color: var(--muted); font-size: 14px; margin-top: 4px; }
+
+/* Skills */
+.kv { margin: 0; display: grid; grid-template-columns: 120px minmax(0, 1fr); }
+.kv dt, .kv dd { margin: 0; padding-block: 12px; border-bottom: 1px solid var(--line); }
+.kv dt { color: var(--faint); font-size: 14px; }
+.kv dd { min-width: 0; }
+
+/* Contact */
+.links { display: flex; flex-wrap: wrap; gap: 10px 24px; padding-top: 14px; }
+.links a { border-bottom: 1px solid var(--ink); }
+.links a:hover { color: var(--green); border-color: var(--green); }
+
+footer.wrap { padding-block: 64px 40px; font-size: 12.5px; color: var(--faint); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+@media (max-width: 640px) {
+  header.wrap { grid-template-columns: minmax(0, 1fr); padding-block: 40px 32px; }
+  .gauge { justify-self: center; }
+  .band .wrap { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+}
+@media (max-width: 520px) {
+  .lots { grid-template-columns: minmax(0, 1fr); }
+  nav.wrap { gap: 16px; }
+  .stat { padding: 14px 10px 14px 0; }
+  .stat + .stat { padding-left: 10px; }
+  .stat b { font-size: 17px; }
+  .stat span { font-size: 12px; line-height: 1.35; display: block; }
+  .kv { grid-template-columns: 1fr; }
+  .kv dt { border-bottom: 0; padding-bottom: 0; }
+  .kv dd { padding-top: 2px; }
+}
+</style>
+
+<nav class="wrap" aria-label="Main">
+  <a href="#top" aria-current="page">Home</a>
+  <a href="#experience">Experience</a>
+  <a href="#watchlist">Watchlist</a>
+  <a href="#reading">Reading</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header class="wrap" id="top">
+  <div>
+    <h1>Finlay O'Connor</h1>
+    <p class="tagline">Finance &amp; Entrepreneurial Startups @ Northeastern University</p>
+    <p class="seeking">Building a career in the automotive industry</p>
+    <div class="ctas">
+      <a class="btn solid" href="#contact">Get in touch</a>
+      <a class="btn" href="https://www.linkedin.com/in/finlay-oconnor" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+
+  <button class="gauge" id="rev" type="button" aria-label="Tachometer clock showing the current time. Click to rev.">
+    <svg viewBox="0 0 140 140" aria-hidden="true">
+      <circle class="rim" cx="70" cy="70" r="66"></circle>
+      <g id="ticks"></g>
+      <line class="minute" id="minute" x1="70" y1="78" x2="70" y2="14" transform="rotate(-135 70 70)"></line>
+      <line class="needle" id="needle" x1="70" y1="76" x2="70" y2="30" transform="rotate(-135 70 70)"></line>
+      <circle class="hub" cx="70" cy="70" r="4.5"></circle>
+    </svg>
+  </button>
+</header>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><b>$250K+</b><span>in auction acquisitions</span></div>
+    <div class="stat"><b>2</b><span>automotive roles</span></div>
+    <div class="stat"><b>May 2027</b><span>graduating, Northeastern</span></div>
+  </div>
+</div>
+
+<section class="band" aria-label="About">
+  <div class="wrap">
+    <h2 class="label">About</h2>
+    <h2>Every car is a business case.</h2>
+    <p>Finance student at Northeastern University (Class of 2027) with a passion for the collector car market and a drive to build a career at the intersection of automotive culture and financial analysis.</p>
+  </div>
+</section>
+
+<section class="wrap" id="experience">
+  <h2 class="label">Experience</h2>
+  <ul class="rows">
+    <li><details>
+      <summary>
+        <span class="role">Road Scholar &amp; AskHagerty Specialist Co-op <span class="at">@ Hagerty</span></span>
+        <span class="when">May – Aug 2026</span>
+        <span class="one">Automotive research and member support for the Hagerty Drivers Club</span>
+      </summary>
+      <ul>
+        <li>Researched and resolved a wide range of automotive questions for Hagerty Drivers Club members.</li>
+        <li>Built an Excel system that centralized member records and sped up the team's response time.</li>
+        <li>Represented the HDC team at the Greenwich Concours d'Elegance.</li>
+      </ul>
+    </details></li>
+    <li><details>
+      <summary>
+        <span class="role">Automotive Sales &amp; Finance Intern <span class="at">@ Parks Automotive Group</span></span>
+        <span class="when">Jul – Aug 2025</span>
+        <span class="one">Executed $250K+ in auction acquisitions</span>
+      </summary>
+      <ul>
+        <li>Bought $250K+ of inventory at auction using valuation comps, depreciation trends, and bidding strategy.</li>
+        <li>Ran wholesale dispositions at regional auctions, negotiating directly with buyers and dealers.</li>
+        <li>Built trade-in valuation models that mirror auction methodology, cutting over-allowances.</li>
+        <li>Worked with the Finance Director on Excel deal-structure tools to improve pricing consistency.</li>
+        <li>Used AI to improve vehicle spec documentation with the sales management team.</li>
+      </ul>
+    </details></li>
+    <li><details>
+      <summary>
+        <span class="role">Server Assistant <span class="at">@ Oxford Exchange</span></span>
+        <span class="when">May 2023 – Jun 2025</span>
+        <span class="one">Tampa, FL</span>
+      </summary>
+      <ul>
+        <li>Front-of-house service at one of Tampa's busiest restaurant and retail destinations.</li>
+      </ul>
+    </details></li>
+  </ul>
+</section>
+
+<section class="wrap">
+  <h2 class="label">Leadership</h2>
+  <ul class="rows">
+    <li><details>
+      <summary>
+        <span class="role">Head of Social Media <span class="at">@ Northeastern Electric Racing</span></span>
+        <span class="when">Sep 2024 – Jan 2026</span>
+        <span class="one">Content strategy for Northeastern's Formula SAE Electric team</span>
+      </summary>
+      <ul>
+        <li>Ran content strategy across every platform to grow engagement and brand presence.</li>
+        <li>Helped build ads, merchandise, and team-wide events as a marketing associate.</li>
+      </ul>
+    </details></li>
+    <li><details>
+      <summary>
+        <span class="role">Shark Tank Final Pitch Mentor <span class="at">@ Intro to Business</span></span>
+        <span class="when">Mar – May 2023</span>
+        <span class="one">Coached first-year students through an entrepreneurship simulation</span>
+      </summary>
+      <ul>
+        <li>Selected by former professors to guide students through finance, supply chain, marketing, and project management in a Shark Tank-style simulation.</li>
+      </ul>
+    </details></li>
+    <li><details>
+      <summary>
+        <span class="role">Member <span class="at">@ Northeastern Dollars and Sense</span></span>
+        <span class="when">Sep 2023 – May 2024</span>
+        <span class="one">Student finance club</span>
+      </summary>
+      <ul>
+        <li>Member of Northeastern's personal finance and investing club.</li>
+      </ul>
+    </details></li>
+  </ul>
+</section>
+
+<section class="wrap">
+  <h2 class="label">Education</h2>
+  <ul class="rows">
+    <li><details>
+      <summary>
+        <span class="role">BSBA, Finance &amp; Entrepreneurial Startups <span class="at">@ Northeastern University</span></span>
+        <span class="when">May 2027</span>
+        <span class="one">D'Amore-McKim School of Business, Boston</span>
+      </summary>
+      <ul>
+        <li>Concentrations in Finance and Entrepreneurial Startups.</li>
+      </ul>
+    </details></li>
+    <li><details>
+      <summary>
+        <span class="role">International Baccalaureate Diploma <span class="at">@ Carrollwood Day School</span></span>
+        <span class="when">May 2023</span>
+        <span class="one">Tampa, FL</span>
+      </summary>
+      <ul>
+        <li>Full IB Diploma Programme.</li>
+      </ul>
+    </details></li>
+  </ul>
+</section>
+
+<section class="wrap" id="watchlist">
+  <h2 class="label">Watchlist <span id="watch-updated"></span></h2>
+  <ul class="lots" id="lots"></ul>
+  <p class="note-line">Auctions I'm following on Bring a Trailer. Bids refresh every couple of hours. <span class="fill">Example listings for now.</span></p>
+</section>
+
+<section class="wrap" id="reading">
+  <h2 class="label">Reading</h2>
+  <ul class="clips" id="clips"></ul>
+  <p class="note-line">Articles on founders, funding, and how businesses get built, with a note on why each one stuck with me.</p>
+</section>
+
+<section class="wrap">
+  <h2 class="label">Skills</h2>
+  <dl class="kv">
+    <dt>Finance</dt><dd>Vehicle valuation and auction comps, Excel deal and pricing tools</dd>
+    <dt>Business</dt><dd>Sales, client relations, CRM tools, automotive research</dd>
+    <dt>Tools</dt><dd>Microsoft and Google Suites</dd>
+    <dt>Interests</dt><dd>The automotive industry, sports, hiking the Appalachian Trail</dd>
+  </dl>
+</section>
+
+<section class="wrap" id="contact">
+  <h2 class="label">Contact</h2>
+  <div class="links">
+    <a href="https://www.linkedin.com/in/finlay-oconnor" target="_blank" rel="noopener">LinkedIn ↗</a>
+  </div>
+</section>
+
+<footer class="wrap">
+  <span>© 2026 Finlay O'Connor</span>
+  <span>Boston, MA</span>
+</footer>
+
+<script>
+/* Tachometer clock: a 0-12 dial over the usual 270° tach sweep.
+   Thick green needle = hour, thin needle = minutes (0-60 across the same sweep,
+   so it drops back to 0 on the hour like a gear change). Visitor's local time. */
+(function () {
+  var cx = 70, cy = 70, start = -135, sweep = 270, max = 12, redline = 10.5;
+  var ns = 'http://www.w3.org/2000/svg', ticks = document.getElementById('ticks');
+  function angleFor(v) { return start + (v / max) * sweep; }
+  function pt(deg, r) { var a = (deg - 90) * Math.PI / 180; return [cx + r * Math.cos(a), cy + r * Math.sin(a)]; }
+  for (var i = 0; i <= max * 2; i++) {
+    var v = i / 2, deg = angleFor(v), major = i % 2 === 0;
+    var a = pt(deg, 60), b = pt(deg, major ? 52 : 56);
+    var l = document.createElementNS(ns, 'line');
+    l.setAttribute('x1', a[0]); l.setAttribute('y1', a[1]); l.setAttribute('x2', b[0]); l.setAttribute('y2', b[1]);
+    l.setAttribute('class', 'tick' + (v >= redline ? ' red' : ''));
+    l.setAttribute('stroke-width', major ? 2 : 1.2);
+    ticks.appendChild(l);
+    if (major && v > 0) {
+      var p = pt(deg, 43), t = document.createElementNS(ns, 'text');
+      t.setAttribute('x', p[0]); t.setAttribute('y', p[1] + 4.5); t.setAttribute('text-anchor', 'middle');
+      t.setAttribute('class', 'num' + (v >= redline ? ' red' : ''));
+      t.textContent = v;
+      ticks.appendChild(t);
+    }
+  }
+
+  var hourEl = document.getElementById('needle'), minEl = document.getElementById('minute');
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var cur = { h: 0, m: 0 }, raf = null, animating = false;
+  function draw() {
+    hourEl.setAttribute('transform', 'rotate(' + angleFor(cur.h) + ' ' + cx + ' ' + cy + ')');
+    minEl.setAttribute('transform', 'rotate(' + angleFor(cur.m) + ' ' + cx + ' ' + cy + ')');
+  }
+  function now() {
+    var d = new Date(), m = d.getMinutes() + d.getSeconds() / 60;
+    return { h: (d.getHours() % 12) + m / 60, m: m / 5 };   /* both on the 0-12 scale */
+  }
+  function tween(to, ms, done) {
+    var from = { h: cur.h, m: cur.m }, t0 = null;
+    cancelAnimationFrame(raf); animating = true;
+    function step(ts) {
+      if (t0 === null) t0 = ts;
+      var k = Math.min(1, (ts - t0) / ms), e = 1 - Math.pow(1 - k, 3);
+      cur.h = from.h + (to.h - from.h) * e; cur.m = from.m + (to.m - from.m) * e; draw();
+      if (k < 1) raf = requestAnimationFrame(step); else { animating = false; if (done) done(); }
+    }
+    raf = requestAnimationFrame(step);
+  }
+  function rev() {
+    if (reduce) { cur = now(); draw(); return; }
+    tween({ h: 11.6, m: 11.8 }, 450, function () { tween(now(), 1100); });
+  }
+
+  if (reduce) { cur = now(); draw(); } else { draw(); setTimeout(rev, 350); }
+  document.getElementById('rev').addEventListener('click', rev);
+  setInterval(function () { if (!animating) { cur = now(); draw(); } }, 1000);
+})();
+
+/* Feeds: data/*.json is refreshed every 2 hours by scripts/update_feeds.py (GitHub Actions) */
+(function () {
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function ago(iso) {
+    if (!iso) return '';
+    var m = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
+    if (m < 1) return 'just now';
+    if (m < 60) return m + ' min ago';
+    var h = Math.round(m / 60);
+    return h < 48 ? h + (h === 1 ? ' hr ago' : ' hrs ago') : Math.round(h / 24) + ' days ago';
+  }
+  function left(ends) {
+    var s = ends - Date.now() / 1000;
+    if (s <= 0) return 'ended';
+    var d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600), m = Math.floor(s % 3600 / 60);
+    return (d > 0 ? d + 'd ' + h + 'h' : h > 0 ? h + 'h ' + m + 'm' : m + 'm') + ' left';
+  }
+
+  var lots = document.getElementById('lots'), stamp = document.getElementById('watch-updated'), timers = [];
+  function renderLots(data) {
+    lots.textContent = '';
+    var list = (data && data.auctions) || [];
+    stamp.textContent = data && data.updated ? 'updated ' + ago(data.updated) : '';
+    if (!list.length) { lots.appendChild(el('li', 'empty', 'No auctions on the watchlist right now.')); return; }
+    list.forEach(function (a) {
+      var li = el('li', 'lot'), link = el('a');
+      link.href = a.url; link.target = '_blank'; link.rel = 'noopener';
+      var thumb = el('div', 'thumb');
+      thumb.appendChild(el('span', 'ph', 'Photos on BaT ↗'));
+      if (a.image) { var img = el('img'); img.alt = ''; img.loading = 'lazy'; img.referrerPolicy = 'no-referrer'; img.onerror = function () { this.remove(); }; img.src = a.image; thumb.appendChild(img); }
+      var live = a.status === 'live' && a.ends > Date.now() / 1000;
+      var mid = el('div', 'body');
+      mid.appendChild(el('div', 't', a.title));
+      var sub = el('div', 'sub');
+      sub.appendChild(el('span', live ? 'live' : null, live ? 'Live' : a.status === 'sold' ? 'Sold' : a.status === 'bid-to' ? 'Not sold' : 'Ended'));
+      sub.appendChild(document.createTextNode(a.noReserve ? ' · No reserve' : ''));
+      mid.appendChild(sub);
+      var num = el('div', 'num');
+      num.appendChild(el('b', null, a.amount || (live ? 'No bids' : '—')));
+      var when = el('small', null, live ? left(a.ends) : a.status === 'sold' ? 'sold' : 'closed');
+      num.appendChild(when);
+      if (live) timers.push(function () { when.textContent = left(a.ends); });
+      mid.appendChild(num);
+      link.appendChild(thumb); link.appendChild(mid);
+      li.appendChild(link); lots.appendChild(li);
+    });
+  }
+  setInterval(function () { timers.forEach(function (f) { f(); }); }, 30000);
+
+  var clips = document.getElementById('clips');
+  function renderClips(data) {
+    clips.textContent = '';
+    var list = (data && data.clippings) || [];
+    if (!list.length) { clips.appendChild(el('li', 'empty', 'First articles coming soon.')); return; }
+    list.forEach(function (a) {
+      var li = el('li', 'clip'), link = el('a');
+      link.href = a.url; link.target = '_blank'; link.rel = 'noopener';
+      var date = a.published ? new Date(a.published + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
+      link.appendChild(el('div', 'src', [a.source, date].filter(Boolean).join(' · ')));
+      link.appendChild(el('div', 't', a.title));
+      if (a.note) link.appendChild(el('div', 'why', a.note));
+      li.appendChild(link); clips.appendChild(li);
+    });
+  }
+
+  function load(path, render, onFail) {
+    fetch(path, { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(render).catch(onFail);
+  }
+  load('data/auctions.json', renderLots, function () { stamp.textContent = ''; lots.textContent = ''; lots.appendChild(el('li', 'empty', 'Auctions are unavailable right now.')); });
+  load('data/reading.json', renderClips, function () { renderClips(null); });
+
+  /* Nav highlight follows the section in view */
+  var navLinks = [].slice.call(document.querySelectorAll('nav a'));
+  var targets = navLinks.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+  function onScroll() {
+    var y = window.scrollY + 120, idx = 0;
+    targets.forEach(function (t, i) { if (t && t.offsetTop <= y) idx = i; });
+    navLinks.forEach(function (a, i) { if (i === idx) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
+</script>
+
+</body>
+</html>
