@@ -114,7 +114,7 @@ details summary:hover .role { color: var(--green); }
 details ul { margin: 0 0 16px; padding-left: 18px; color: var(--muted); font-size: 14px; display: grid; gap: 6px; max-width: 62ch; }
 details li::marker { color: var(--green); }
 
-/* Watchlist */
+/* Photos */ .photos { padding-top: 32px; } .shots { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.75fr); gap: 12px; } .shots figure { margin: 0; height: 300px; border-radius: 8px; overflow: hidden; background: var(--line); } .shots img { width: 100%; height: 100%; object-fit: cover; display: block; } .caption { font-size: 12.5px; color: var(--faint); margin: 10px 0 0; } @media (max-width: 520px) { .shots figure { height: 210px; } } /* Watchlist */
 .lots { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .lot a { display: flex; flex-direction: column; height: 100%; background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; transition: border-color .15s ease, transform .15s ease; }
 .lot a:hover { border-color: var(--green); transform: translateY(-2px); }
@@ -218,7 +218,7 @@ footer.wrap { padding-block: 64px 40px; font-size: 12.5px; color: var(--faint); 
   </div>
 </section>
 
-<section class="wrap" id="experience">
+<section class="wrap photos" aria-label="Greenwich Concours photos"><div class="shots"><figure><img src="images/greenwich-finlay.jpg" alt="Finlay O'Connor at the entrance to the Greenwich Concours" style="object-position: 61% 66%"></figure><figure><img src="images/greenwich-field.jpg" alt="Classic Ferraris on the lawn at the Greenwich Concours" loading="lazy" style="object-position: 45% 60%"></figure></div><p class="caption">Representing Hagerty at the Greenwich Concours d'Elegance, 2026</p></section> <section class="wrap" id="experience">
   <h2 class="label">Experience</h2>
   <ul class="rows">
     <li><details>
