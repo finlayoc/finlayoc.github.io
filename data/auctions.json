@@ -1,41 +1,41 @@
 {
-  "updated": "2026-10-29T22:20:54+00:00",
+  "updated": "2026-10-29T22:24:14+00:00",
   "auctions": [
     {
-      "url": "https://bringatrailer.com/listing/2004-mercedes-benz-sl55-amg-121/",
-      "title": "30k-Mile 2004 Mercedes-Benz SL55 AMG",
+      "url": "https://bringatrailer.com/listing/1990-toyota-land-cruiser-fj62-111/",
+      "title": "1990 Toyota Land Cruiser FJ62",
       "noReserve": false,
-      "image": "https://bringatrailer.com/wp-content/uploads/2026/09/A7308860-scaled-copy-2026-10-20-s3h-copy-2026-10-26-6t1-349f9613b7129291be685588763af438.jpg",
+      "image": "https://bringatrailer.com/wp-content/uploads/2026/10/10a-scaled-copy-2026-10-15-use-a1a8b36f07211389daaffa64eaa6480e.jpg",
       "status": "live",
-      "amount": null,
-      "ends": 1793906040
+      "amount": "$26,500",
+      "ends": 1793471280
     },
     {
-      "url": "https://bringatrailer.com/listing/2006-porsche-cayman-s-300/",
-      "title": "2006 Porsche Cayman S 6-Speed",
+      "url": "https://bringatrailer.com/listing/2006-lotus-elise-102/",
+      "title": "2006 Lotus Elise",
       "noReserve": false,
-      "image": "https://bringatrailer.com/wp-content/uploads/2026/09/IMG_0862-scaled-copy-2026-10-25-p3s-c489d1d184f408c7b87875dbfad02be7.jpg",
+      "image": "https://bringatrailer.com/wp-content/uploads/2026/10/1130BC80-A5FD-4B30-8471-297C2A80755B-scaled-copy-2026-10-16-fuz-539464eddb80cce2bedc2ad465e9373f.jpg",
       "status": "live",
-      "amount": "$9,871",
-      "ends": 1793906100
+      "amount": "$29,006",
+      "ends": 1793555040
     },
     {
-      "url": "https://bringatrailer.com/listing/2006-subaru-impreza-wrx-tr-4/",
-      "title": "2006 Subaru Impreza WRX TR 5-Speed",
+      "url": "https://bringatrailer.com/listing/1998-mitsubishi-pajero-evolution-23/",
+      "title": "1998 Mitsubishi Pajero Evolution",
       "noReserve": false,
-      "image": "https://bringatrailer.com/wp-content/uploads/2026/07/IMG_0389-scaled-copy-2026-10-26-93m-0225d80e16ad17793c62cd13936d9e31.jpg",
+      "image": "https://bringatrailer.com/wp-content/uploads/2026/07/0003-4-copy-2026-09-28-yn0-09504.jpg",
       "status": "live",
-      "amount": null,
-      "ends": 1793908740
+      "amount": "$15,000",
+      "ends": 1793646300
     },
     {
-      "url": "https://bringatrailer.com/listing/1977-toyota-land-cruiser-fj40-198/",
-      "title": "1977 Toyota Land Cruiser FJ40",
+      "url": "https://bringatrailer.com/listing/1973-porsche-911t-coupe-63/",
+      "title": "1973 Porsche 911T Coupe 5-Speed",
       "noReserve": true,
-      "image": "https://bringatrailer.com/wp-content/uploads/2026/10/IMG_5774-scaled-copy-2026-10-27-oe1-a829b9f55e5662be61e35cab80cb61f4.jpg",
+      "image": "https://bringatrailer.com/wp-content/uploads/2026/10/IMG-3578_copy-scaled-4faa4d1a382f7ef904236394c003b36c.jpg",
       "status": "live",
-      "amount": "$1,977",
-      "ends": 1793914860
+      "amount": "$89,999",
+      "ends": 1793654520
     }
   ]
 }
