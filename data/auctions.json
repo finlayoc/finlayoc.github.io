@@ -1,15 +1,6 @@
 {
-  "updated": "2026-10-31T16:51:14+00:00",
+  "updated": "2026-10-31T18:58:44+00:00",
   "auctions": [
-    {
-      "url": "https://bringatrailer.com/listing/1990-toyota-land-cruiser-fj62-111/",
-      "title": "1990 Toyota Land Cruiser FJ62",
-      "noReserve": false,
-      "image": "https://bringatrailer.com/wp-content/uploads/2026/10/10a-scaled-copy-2026-10-15-use-a1a8b36f07211389daaffa64eaa6480e.jpg",
-      "status": "live",
-      "amount": "$27,000",
-      "ends": 1793471280
-    },
     {
       "url": "https://bringatrailer.com/listing/2006-lotus-elise-102/",
       "title": "2006 Lotus Elise",
@@ -25,7 +16,7 @@
       "noReserve": false,
       "image": "https://bringatrailer.com/wp-content/uploads/2026/07/0003-4-copy-2026-09-28-yn0-09504.jpg",
       "status": "live",
-      "amount": "$16,000",
+      "amount": "$16,500",
       "ends": 1793646300
     },
     {
@@ -36,6 +27,15 @@
       "status": "live",
       "amount": "$89,999",
       "ends": 1793654520
+    },
+    {
+      "url": "https://bringatrailer.com/listing/1990-toyota-land-cruiser-fj62-111/",
+      "title": "1990 Toyota Land Cruiser FJ62",
+      "noReserve": false,
+      "image": "https://bringatrailer.com/wp-content/uploads/2026/10/10a-scaled-copy-2026-10-15-use-a1a8b36f07211389daaffa64eaa6480e.jpg",
+      "status": "sold",
+      "amount": "$39,750",
+      "ends": null
     }
   ]
 }
