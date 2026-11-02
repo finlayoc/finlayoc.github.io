@@ -1,22 +1,13 @@
 {
-  "updated": "2026-11-02T19:12:41+00:00",
+  "updated": "2026-11-02T20:57:44+00:00",
   "auctions": [
-    {
-      "url": "https://bringatrailer.com/listing/1998-mitsubishi-pajero-evolution-23/",
-      "title": "1998 Mitsubishi Pajero Evolution",
-      "noReserve": false,
-      "image": "https://bringatrailer.com/wp-content/uploads/2026/07/0003-4-copy-2026-09-28-yn0-09504.jpg",
-      "status": "live",
-      "amount": "$40,000",
-      "ends": 1793646793
-    },
     {
       "url": "https://bringatrailer.com/listing/1973-porsche-911t-coupe-63/",
       "title": "1973 Porsche 911T Coupe 5-Speed",
       "noReserve": true,
       "image": "https://bringatrailer.com/wp-content/uploads/2026/10/IMG-3578_copy-scaled-4faa4d1a382f7ef904236394c003b36c.jpg",
       "status": "live",
-      "amount": "$92,000",
+      "amount": "$101,973",
       "ends": 1793654520
     },
     {
@@ -35,6 +26,15 @@
       "image": "https://bringatrailer.com/wp-content/uploads/2026/10/1130BC80-A5FD-4B30-8471-297C2A80755B-scaled-copy-2026-10-16-fuz-539464eddb80cce2bedc2ad465e9373f.jpg",
       "status": "sold",
       "amount": "$36,500",
+      "ends": null
+    },
+    {
+      "url": "https://bringatrailer.com/listing/1998-mitsubishi-pajero-evolution-23/",
+      "title": "1998 Mitsubishi Pajero Evolution",
+      "noReserve": false,
+      "image": "https://bringatrailer.com/wp-content/uploads/2026/07/0003-4-copy-2026-09-28-yn0-09504.jpg",
+      "status": "sold",
+      "amount": "$40,250",
       "ends": null
     }
   ]
